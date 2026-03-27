@@ -4,3 +4,8 @@ Main Uses of the super Keyword:-
 Access Parent Variables: super.variableName differentiates parent class fields from subclass fields with the same name.
 Invoke Parent Methods: super.methodName() calls overridden methods from the superclass, allowing for extended functionality.
 Call Parent Constructors: super() or super(args) in a constructor initializes the parent class portion, ensuring proper setup. 
+Method overriding in Java enables a subclass to provide a specific implementation for a method defined in its superclass, forming a core part of runtime polymorphism. Key requirements include an inheritance relationship, matching method signatures (name, parameters, and return type), and the ability to use the @Override annotation for compile-time checking. 
+Key Rules:
+Access/Exceptions: Overriding methods cannot be more restrictive in access than the original, nor can they throw broader checked exceptions.
+Limitations: final, static, and private methods cannot be overridden.
+super Keyword: Use super to call the parent class's version of the method
