@@ -1,0 +1,26 @@
+// Parent class (Superclass)
+class Animal {
+    public void makeSound() {
+        System.out.println("Animal makes a generic sound");
+    }
+}
+
+// Child class (Subclass)
+class Dog extends Animal {
+    @Override 
+    public void makeSound() {
+        // Use 'super.methodName()' to explicitly call the overridden method of the parent class
+        super.makeSound(); 
+        System.out.println("Dog barks (Woof Woof)");
+    }
+}
+
+// Main class to run the example
+public class InheritanceDemo {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        
+        // This calls the overridden method in the Dog class
+        myDog.makeSound(); 
+    }
+}
