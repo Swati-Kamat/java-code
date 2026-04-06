@@ -8,4 +8,4 @@ Method overriding in Java enables a subclass to provide a specific implementatio
 Key Rules:
 Access/Exceptions: Overriding methods cannot be more restrictive in access than the original, nor can they throw broader checked exceptions.
 Limitations: final, static, and private methods cannot be overridden.
-super Keyword: Use super to call the parent class's version of the method
+super Keyword: Use super to call the parent class's version of the method.
